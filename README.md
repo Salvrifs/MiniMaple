@@ -16,5 +16,5 @@ a*x^n + b*x^{n-1} + ... + z
 - [x] Изучить описания методов класса [Atom](MiniMaple/Atom.cs)
 - [x] Реализовать класс [Number](MiniMaple/Number.cs)
 - [x] Реализовать класс [Term](MiniMaple/Term.cs)
-- [ ] Реализовать класс [Sum](MiniMaple/Sum.cs)
+- [x] Реализовать класс [Sum](MiniMaple/Sum.cs)
 - [ ] Добавить сведения о покрытии кода тестами согласно [инструкции](https://github.com/MMCS-FIIT/dotnet-coverage-demo)
