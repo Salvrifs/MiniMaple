@@ -31,9 +31,12 @@ public class Sum : Atom
 
     public override bool Eq(Atom other)
     {
-        // TODO: реализуйте операцию сравнения
+        //  реализуйте операцию сравнения
         // Указание: сравните значения полей
-        throw new NotImplementedException();
+        if (other is Sum sum)
+            return lhs.Eq(sum.lhs) && rhs.Eq(sum.rhs);
+        else 
+            return false;
     }
 
     public override Atom Neg()
@@ -62,7 +65,11 @@ public class Sum : Atom
         // TODO: реализуйте операцию вычитания
         // Указание: аналогично Add
         // Подсказка: используйте метод Neg
-        throw new NotImplementedException();
+
+        if (rhs == null)
+            return new Sum(lhs, other.Neg());
+        else
+            return new Sum(this, other.Neg());
     }
 
     public override Atom Diff(string sym = "x")
@@ -72,7 +79,8 @@ public class Sum : Atom
         // Производная левой части выражения
         Atom lhs = this.lhs.Diff(sym);
         // TODO: вычислите производную правой части выражения
-        Atom rhs = null;
+        //Atom rhs = null;
+        Atom rhs = this.rhs.Diff(sym);
         var zero = new Number(0);
 
         // Если производные левой и правой части выражения - константы
@@ -85,6 +93,8 @@ public class Sum : Atom
             return rhs;
         // TODO: проверить это условия для правой части
         //  ...
+        else if (rhs.Eq(zero))
+            return lhs;
         else
             // Если обе части не равны нулю, то результат - их сумма
             return new Sum(lhs, rhs);
