@@ -18,3 +18,5 @@ a*x^n + b*x^{n-1} + ... + z
 - [x] Реализовать класс [Term](MiniMaple/Term.cs)
 - [x] Реализовать класс [Sum](MiniMaple/Sum.cs)
 - [x] Добавить сведения о покрытии кода тестами согласно [инструкции](https://github.com/MMCS-FIIT/dotnet-coverage-demo)
+
+:)
