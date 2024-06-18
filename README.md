@@ -11,8 +11,8 @@ a*x^n + b*x^{n-1} + ... + z
 
 ## Задания:
 (~~можно~~ нужно отмечать выполненные пункты `- [x] Вот так`)
-- [ ] Создать форк этого репозитория
-- [ ] Добавить [.gitignore](https://dev.to/rafalpienkowski/easy-to-create-gitignore-for-the-dotnet-developers-1h42) 
+- [x] Создать форк этого репозитория
+- [x] Добавить [.gitignore](https://dev.to/rafalpienkowski/easy-to-create-gitignore-for-the-dotnet-developers-1h42) 
 - [ ] Изучить описания методов класса [Atom](MiniMaple/Atom.cs)
 - [ ] Реализовать класс [Number](MiniMaple/Number.cs)
 - [ ] Реализовать класс [Term](MiniMaple/Term.cs)
