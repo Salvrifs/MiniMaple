@@ -53,10 +53,10 @@ public class Term : Atom
 
     public override Atom Neg()
     {
-        // TODO: реализовать операцию отрицания
+        // реализовать операцию отрицания
         // Указание: создайте новый объект класса Term
         // Подсказка: нужно сменить знак коэффициента
-        throw new NotImplementedException();
+        return new Term(symbol, -coefficient, power);
     }
 
     public override Atom Add(Atom other)
@@ -72,7 +72,7 @@ public class Term : Atom
         // TODO: реализуйте операцию вычитания.
         // Указание: аналогично сложению.
         // Подсказка: нужно вызвать метод Neg
-        throw new NotImplementedException();
+        return new Sum(Copy(), other.Neg());
     }
 
     public Term Mul(int value)
