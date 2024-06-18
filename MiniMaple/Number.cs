@@ -18,7 +18,7 @@ public class Number : Atom
     public int Value => value;
 
     // TODO: реализовать проверку отрицательности
-    public override bool Negative => throw new NotImplementedException();
+    public override bool Negative => value < 0;
 
     public override bool Eq(Atom other)
     {
