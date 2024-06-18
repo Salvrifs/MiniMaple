@@ -13,8 +13,8 @@ a*x^n + b*x^{n-1} + ... + z
 (~~можно~~ нужно отмечать выполненные пункты `- [x] Вот так`)
 - [x] Создать форк этого репозитория
 - [x] Добавить [.gitignore](https://dev.to/rafalpienkowski/easy-to-create-gitignore-for-the-dotnet-developers-1h42) 
-- [ ] Изучить описания методов класса [Atom](MiniMaple/Atom.cs)
-- [ ] Реализовать класс [Number](MiniMaple/Number.cs)
+- [x] Изучить описания методов класса [Atom](MiniMaple/Atom.cs)
+- [x] Реализовать класс [Number](MiniMaple/Number.cs)
 - [ ] Реализовать класс [Term](MiniMaple/Term.cs)
 - [ ] Реализовать класс [Sum](MiniMaple/Sum.cs)
 - [ ] Добавить сведения о покрытии кода тестами согласно [инструкции](https://github.com/MMCS-FIIT/dotnet-coverage-demo)
