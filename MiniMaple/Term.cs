@@ -69,7 +69,7 @@ public class Term : Atom
 
     public override Atom Sub(Atom other)
     {
-        // TODO: реализуйте операцию вычитания.
+        //  реализуйте операцию вычитания.
         // Указание: аналогично сложению.
         // Подсказка: нужно вызвать метод Neg
         return new Sum(Copy(), other.Neg());
@@ -87,11 +87,14 @@ public class Term : Atom
 
     public Term Pow(int value)
     {
-        // TODO: реализуйте операцию возведения в степень
+        //  реализуйте операцию возведения в степень
         // Указание: аналогично Mul
         // Подсказка: для пересчета коэффициента используйте методы Math и приведение типов.
         // Не забудьте обновить показатель степени!
-        throw new NotImplementedException();
+        Term copy = Copy();
+        copy.coefficient = (int)Math.Pow(coefficient , value);
+        copy.power *= value;
+        return copy;
     }
 
     public override Atom Diff(string sym = "x")
@@ -100,7 +103,15 @@ public class Term : Atom
         // если переменная sym не равна (<>) переменной одночлена, то производная равна нулю (Number);
         // если показатель степени больше единицы, то производная равна a*k*x^(k-1) (Term);
         // если показатель степени равен единице, то производная равна a*k (Number).
-        throw new NotImplementedException();
+        if (sym!=symbol)
+        {
+            return new Number(0);
+        }    
+        if(power==1)
+        {
+            return new Number(Coefficient);
+        }
+        return new Term(symbol, coefficient * power, power - 1);
     }
 
     public override string ToString()
