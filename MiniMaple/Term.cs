@@ -44,9 +44,9 @@ public class Term : Atom
     public override bool Eq(Atom other)
     {
         if (other is Term term)
-            // TODO: сравните значения полей
-            // return ...
-            throw new NotImplementedException();
+            return symbol == term.symbol &&
+                coefficient == term.coefficient &&
+                power == term.power;
         else
             return false;
     }
