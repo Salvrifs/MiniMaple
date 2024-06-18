@@ -15,6 +15,6 @@ a*x^n + b*x^{n-1} + ... + z
 - [x] Добавить [.gitignore](https://dev.to/rafalpienkowski/easy-to-create-gitignore-for-the-dotnet-developers-1h42) 
 - [x] Изучить описания методов класса [Atom](MiniMaple/Atom.cs)
 - [x] Реализовать класс [Number](MiniMaple/Number.cs)
-- [ ] Реализовать класс [Term](MiniMaple/Term.cs)
+- [x] Реализовать класс [Term](MiniMaple/Term.cs)
 - [ ] Реализовать класс [Sum](MiniMaple/Sum.cs)
 - [ ] Добавить сведения о покрытии кода тестами согласно [инструкции](https://github.com/MMCS-FIIT/dotnet-coverage-demo)
