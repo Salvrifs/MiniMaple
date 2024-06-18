@@ -45,10 +45,11 @@ public class TermTests
     public void TestNegative()
     {
         var x = new Term("x");
+        var x2 = new Term("x", -1);
         Assert.Multiple(() =>
         {
             Assert.That(x.Negative, Is.False);
-            Assert.That(x.Neg().Negative, Is.True);
+            Assert.That(x2.Negative, Is.True);
         });
     }
 

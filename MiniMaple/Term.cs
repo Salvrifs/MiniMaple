@@ -39,7 +39,7 @@ public class Term : Atom
 
     // TODO: реализовать проверку отрицательности
     // Подсказка: сравните коэффициент с нулем
-    public override bool Negative => throw new NotImplementedException();
+    public override bool Negative => coefficient < 0;
 
     public override bool Eq(Atom other)
     {
